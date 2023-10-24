@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
 /* reset para navegador */
 * {       
     margin: 0;
@@ -8,7 +11,7 @@ body{
     height: 100%;  /* altura */
     display: flex;
     justify-content: center;
-    background-color: rgb(2, 249, 249);
+    background: linear-gradient(#3887d7, #8a8b8d);
 }
 .imagem{  /*estrutura div */
     display: flex;
@@ -69,30 +72,115 @@ body{
      font-size: 17px;
      line-height: 35px;
   }
+  .nome-icone{
+    font-family: "metal mania " cursive;
+    margin-right: 40px;
+    float: right;
+    color: black;
+    font-weight: 100px;
+    line-height: 35px;
+    font-size: 17px;
+  }
   .icone:hover{
     width: 125px;
     background-color: rgb(248, 246, 242);
-
-
+    border-radius: 17px;
   }
   .texto{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
-    width: 500px;
-    height: 150px;
-    padding:  0px 50px;
-    border-radius: 15px;
-    background: aquamarine;
-    color: black;
+    margin: 50px 35px;
+    font-family: "victor mono" monospace;
+    font-size: 20px;
+    text-align: justify;
+    width: 700px;
+    height: 200px;
+    padding:  50px;
+    border-radius: 24px;
+    background: rgb(3, 26, 62);
+    color:rgb(237, 233, 233);
    overflow: hidden;
-   box-shadow: 7px 7px 15px;
+   box-shadow: 7px 7px 15px rgba(0,0,0,.1);
   }
   h2{
     margin-top: 35px;
     text-align: center;
     color: black;
   }
-
+  .sobre-mim{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .subtitulo{
+    font-weight: 100;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+  .linguagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .linguagem img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+  }
+  .projetos {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .Item {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #010202;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 100px;
+    width: 570px;
+    height: 60px;
+    font-size: 20px;
+    background: rgb(234,234,234);
+    box-shadow: 0 5px 5px rgb(30, 5, 5);
+  }
+  .Item:hover {
+    transition: 0.2s;
+    background-color: #1a4990;
+  }
+  #movie {
+    padding: 15px;
+    margin: auto;
+    display: none;
+  }
+  #movie.active {
+  display: block;
+}
+.rodape p {
+  color: #010202;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 50px;
+  font-family: "metal mania", cursive;
+}
   
